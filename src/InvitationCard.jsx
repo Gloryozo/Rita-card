@@ -1,17 +1,17 @@
 
 
-
-
-
 export default function InvitationCard() {
   return (
     <div className="min-h-screen flex items-center justify-center bg-[#14523a]">
-      <div className="relative w-full max-w-2xl border-[20px] border-white rounded-xl shadow-2xl bg-[#17604b] flex items-center justify-center" style={{minHeight: '900px'}}>
-        {/* Single flower image in top left, overlayed */}
-        <img src="/flowers/floral.png" alt="floral" className="absolute top-0 left-0 w-40 -translate-x-8 -translate-y-8 z-10 select-none pointer-events-none" />
+      <div className="relative w-full max-w-2xl border-[80px] border-white rounded-xl shadow-2xl bg-[#17604b] flex items-center justify-center overflow-visible" style={{minHeight: '900px'}}>
+        {/* Burgundy flowers at the four corners of the white border */}
+        <img src="/flowers/burgundy_flower.png" alt="burgundy floral" className="absolute -top-24 -left-24 w-48 z-30 select-none pointer-events-none" style={{maxWidth: '40vw'}} />
+        <img src="/flowers/burgundy_flower.png" alt="burgundy floral" className="absolute -top-24 -right-24 w-48 z-30 select-none pointer-events-none rotate-0" style={{maxWidth: '50vw'}} />
+        <img src="/flowers/burgundy_flower.png" alt="burgundy floral" className="absolute -bottom-24 -left-24 w-48 z-30 select-none pointer-events-none -rotate-10" style={{maxWidth: '40vw'}} />
+        <img src="/flowers/burgundy_flower.png" alt="burgundy floral" className="absolute -bottom-24 -right-24 w-48 z-30 select-none pointer-events-none rotate-10" style={{maxWidth: '40vw'}} />
         {/* Card content */}
-        <div className="relative z-20 flex flex-col items-center justify-center px-10 py-16 text-center w-full" style={{minHeight: '900px'}}>
-          <div className="mb-6">
+        <div className="relative z-30 flex flex-col items-center justify-center px-10 py-16 text-center w-full" style={{minHeight: '900px'}}>
+          <div className="mb-10">
             <span className="text-2xl tracking-widest text-[#bfa14a] font-serif font-semibold" style={{letterSpacing: '0.15em'}}>THE FAMILIES OF</span>
           </div>
           <div className="mb-4 text-white text-lg leading-relaxed font-serif">
@@ -26,8 +26,9 @@ export default function InvitationCard() {
             AT THE NUPTIAL MASS UNITING
           </div>
           <div className="mb-2">
-            <span className="block text-white text-5xl font-serif font-bold">Nwadimma Rita <span className="text-2xl align-top italic">and</span></span>
-            <span className="block text-white text-5xl font-serif font-bold mt-2">Onyedika Adolphus Emmanuel</span>
+            <span className="block text-white text-3xl font-serif font-bold">Nwadimma Rita</span>
+            <span className="block text-white text-xl italic font-serif font-bold my-1">and</span>
+            <span className="block text-white text-3xl font-serif font-bold">Onyedika Adolphus Emmanuel</span>
           </div>
           <div className="mt-6 mb-2 text-white text-lg tracking-wider font-serif font-semibold">
             SATURDAY, 24TH JANUARY, 2026<br />
