@@ -1,9 +1,31 @@
+import html2canvas from "html2canvas";
+import jsPDF from "jspdf";
+
+  const exportToPDF = async () => {
+    const card = document.getElementById("card-to-export");
+    if (!card) return;
+    const canvas = await html2canvas(card, { scale: 2 });
+    const imgData = canvas.toDataURL("image/png");
+    const pdf = new jsPDF({
+      orientation: "portrait",
+      unit: "px",
+      format: [canvas.width, canvas.height]
+    });
+    pdf.addImage(imgData, "PNG", 0, 0, canvas.width, canvas.height);
+    pdf.save("wedding_card.pdf");
+  };
 
 
 export default function InvitationCard() {
   return (
-    <div className="min-h-screen flex items-center justify-center bg-[#14523a]">
-      <div className="relative w-full max-w-2xl border-[80px] border-white rounded-xl shadow-2xl bg-[#17604b] flex items-center justify-center overflow-visible" style={{minHeight: '900px'}}>
+    <div className="min-h-screen flex items-center justify-center bg-[#14523a] relative">
+      <button
+        onClick={exportToPDF}
+        className="absolute top-4 right-4 px-4 py-2 bg-[#bfa14a] text-white rounded shadow z-50"
+      >
+        Export as PDF
+      </button>
+      <div id="card-to-export" className="relative w-full max-w-2xl border-[80px] border-white rounded-xl shadow-2xl bg-[#17604b] flex items-center justify-center overflow-visible" style={{minHeight: '900px'}}>
         {/* Burgundy flowers at the four corners of the white border */}
         <img src="/flowers/burgundy_flower.png" alt="burgundy floral" className="absolute -top-24 -left-24 w-48 z-30 select-none pointer-events-none" style={{maxWidth: '40vw'}} />
         <img src="/flowers/burgundy_flower.png" alt="burgundy floral" className="absolute -top-24 -right-24 w-48 z-30 select-none pointer-events-none rotate-0" style={{maxWidth: '50vw'}} />
