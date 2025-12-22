@@ -1,3 +1,23 @@
+
+.couple-script-name {
+  font-family: 'Great Vibes', cursive !important;
+  color: #D4AF37 !important;
+  font-size: 3.6rem;
+  font-weight: 600;
+  line-height: 1.1;
+  letter-spacing: 0.04em;
+  margin-bottom: 0.2em;
+  margin-top: 0.2em;
+}
+
+.couple-script-and {
+  font-family: 'Great Vibes', cursive !important;
+  color: #D4AF37 !important;
+  font-size: 1.7rem;
+  margin: 0.5rem 0 0.5rem 0;
+  font-weight: 400;
+  letter-spacing: 0.02em;
+}
 #root {
   max-width: 1280px;
   margin: 0 auto;
