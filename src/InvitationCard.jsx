@@ -38,7 +38,7 @@ export default function InvitationCard() {
           }
 
           .couple-script-name {
-            font-family: 'Great Vibes', cursive;
+            font-family: 'Great Vibes', serif;
             font-size: 3.2rem;
             color: #bfa14a;
             line-height: 1.2;
@@ -75,51 +75,50 @@ export default function InvitationCard() {
             <div className="mb-10">
               <span
                 className="text-2xl tracking-widest text-[#bfa14a] font-heading"
-                style={{ letterSpacing: "0.15em" }}
+                style={{ letterSpacing: "0.15em", textShadow: "0 2px 8px #000, 0 0 2px #000" }}
               >
                 THE FAMILIES OF
               </span>
             </div>
 
-            <div className="mb-4 text-white text-lg leading-relaxed font-body font-semibold">
-              Late Mr. Everest &amp; Mrs. Victoria Onuoha of<br />
+            <div className="mb-5 text-white font-body font-semibold" style={{ fontSize: "1.25rem", textShadow: "0 2px 8px #000, 0 0 2px #000" }}>
+                Late Mr. Everest &amp; Mrs. Victoria Onuoha of<br />
               Umuchie, Ezeagbogu, Ezinihitte Mbaise<br />
               &<br />
-              Mr. Christopher &amp; Mrs. Charity Obijiaku of<br />
-              Ezihe, Uzii, Ideato North both<br />
+              Mr. Christopher & Mrs. Charity Obijaku of<br />
+              Ezihe, Uzii, Ideato North<br />
               Both of Imo State
             </div>
 
-            <div className="mt-6 mb-4 text-white text-base tracking-wide font-body">
-              Request the honour of your presence at the nuptial mass uniting
+            <div className="mt-6 mb-4 text-white font-body" style={{ fontSize: "1.1rem", textShadow: "0 2px 8px #000, 0 0 2px #000" }}>
+                Request the honour of your presence at the nuptial mass uniting
             </div>
 
-            <div className="couple-names" style={{ margin: "2rem 0" }}>
-              <div className="couple-script-name">Nwadimma Rita</div>
-              <div className="couple-script-and">and</div>
-              <div className="couple-script-name">Onyedika Adolphus Emmanuel</div>
+            <div className="couple-names flex flex-col items-center" style={{ margin: "2rem 0" }}>
+                <div className="couple-script-name" style={{ textShadow: "0 2px 8px #000, 0 0 2px #000" }}>Nwadimma Rita</div>
+                <div className="couple-script-and" style={{ fontSize: "1.2rem", color: "#bfa14a", margin: "0.5rem 0", textShadow: "0 2px 8px #000, 0 0 2px #000" }}>and</div>
+                <div className="couple-script-name" style={{ textShadow: "0 2px 8px #000, 0 0 2px #000", whiteSpace: "nowrap" }}>Onyedika Adolphus Emmanuel</div>
             </div>
 
-            <div className="mt-4 mb-2 text-white text-base tracking-wide font-body">
-              in the sacrament of holy matrimony
+            <div className="mt-4 mb-2 text-white font-body" style={{ fontSize: "1.1rem", textShadow: "0 2px 8px #000, 0 0 2px #000" }}>
+                in the sacrament of Holy Matrimony
             </div>
 
-            <div className="mt-6 mb-2 text-white text-lg tracking-wider font-body font-semibold">
-              Sarturday, 24th January, 2026<br />
+            <div className="mt-6 mb-2 text-white font-body font-semibold" style={{ fontSize: "1.35rem", textShadow: "0 2px 8px #000, 0 0 2px #000" }}>
+                Saturday, 24th January, 2026<br />
               10:00 AM
             </div>
 
-            <div className="mb-2 text-white text-lg font-body">
-              At Our Lady of Fatima Cathedral, Jos.
+            <div className="mb-2 text-white font-body" style={{ fontSize: "1.15rem", textShadow: "0 2px 8px #000, 0 0 2px #000" }}>
+                At Our Lady of Fatima Cathedral, Jos.
             </div>
 
-            <div className="mt-4 mb-2 text-[#bfa14a] text-lg font-body font-semibold">
-              Colours of the day: Emerald green,<br />
-              Burgundy, and Gold
+            <div className="mt-4 mb-2 text-[#bfa14a] text-lg font-body font-semibold" style={{ textShadow: "0 2px 8px #000, 0 0 2px #000" }}>
+              Colours of the Day: Emerald Green, Burgundy, Gold
             </div>
 
-            <div className="mt-4 text-white text-lg font-body">
-              RSVP: 08037856561, 08167157607
+            <div className="mt-4 text-white font-body" style={{ fontSize: "1.15rem", textShadow: "0 2px 8px #000, 0 0 2px #000" }}>
+                RSVP: 0803 785 6361 | 0816 715 7607
             </div>
           </div>
         </div>
