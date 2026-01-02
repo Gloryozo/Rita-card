@@ -1,6 +1,7 @@
 import html2canvas from "html2canvas";
 import jsPDF from "jspdf";
 
+//function to export the invitation card as a PDF
 export default function InvitationCard() {
   const exportToPDF = async () => {
     const card = document.getElementById("card-to-export");
