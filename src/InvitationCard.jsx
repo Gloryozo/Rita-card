@@ -15,10 +15,16 @@ export default function InvitationCard() {
     const pageWidth = 210;
     const pageHeight = 297;
     const imgProps = pdf.getImageProperties(imgData);
-    const imgWidth = pageWidth;
-    const imgHeight = (imgProps.height * imgWidth) / imgProps.width;
+    // Calculate the image dimensions to fit A4 exactly, maintaining aspect ratio
+    let imgWidth = pageWidth;
+    let imgHeight = (imgProps.height * imgWidth) / imgProps.width;
+    if (imgHeight > pageHeight) {
+      imgHeight = pageHeight;
+      imgWidth = (imgProps.width * imgHeight) / imgProps.height;
+    }
+    const xOffset = (pageWidth - imgWidth) / 2;
     const yOffset = (pageHeight - imgHeight) / 2;
-    pdf.addImage(imgData, "PNG", 0, yOffset, imgWidth, imgHeight);
+    pdf.addImage(imgData, "PNG", xOffset, yOffset, imgWidth, imgHeight);
     pdf.save("wedding_card.pdf");
   };
 
